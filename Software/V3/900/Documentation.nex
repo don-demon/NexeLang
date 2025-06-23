@@ -188,11 +188,20 @@ part (long_name -> a) {                 // you can make mask on huge variable na
 
 
 /// functions
+/*
 
+<type> <name>(<type> <name>, ...) {
+    // code
+}
 
+*/
 
+// example
+int return_2() {
+    return: 2;
+}
 
-
+// void works too, btw NexeLang has multiple return functions, but it's too unstable, so... not yet
 
 
 
