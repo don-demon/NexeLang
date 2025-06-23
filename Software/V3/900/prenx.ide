@@ -1,0 +1,36 @@
+// This is NexeLang file example
+// In case you are using NexeLang Terminal,
+// you can use prenx.ide file to run code parts
+// before full IDE initialization
+
+
+// Music triggers examples
+// requared: kb.dll
+include "kb";
+trigger m_prev = [
+    kb::pushed( ["alt", "9"] ),
+    { music::previous(); }
+];
+trigger m_next = [
+    kb::pushed( ["alt", "0"] ),
+    { music::next(); }
+];
+trigger m_play_stop = [
+    kb::pushed( ["alt", "o"] ),
+    { music::play(); }
+];
+
+// some debug ideas
+trigger help_message = [
+    kb::pushed(["alt", "shift", "h"]),
+    out: "Hello world";
+];
+
+// deleting triggers
+delete help_message;
+
+// overriding triggers
+override m_play_stop = [
+    kb::pushed( ["alt", "8"] ),
+    { music::stop(); }
+];
