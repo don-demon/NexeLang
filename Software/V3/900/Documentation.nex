@@ -105,6 +105,8 @@ out: "hello ", "there", "!";            // -> hello there!
 out(","): 1, 2, 3, true;                // -> 1,2,3,true
 out(" divider "): 1, "e", 3;            // -> 1 divider e divider 3
 
+
+/*
 // input
 str s = in; out: s;                     // this will output what you write in it
 out: in;                                // same as above, but without variable
@@ -114,6 +116,7 @@ if (in == 7) {out: "user inputs 7";}    // this block will work correctly only i
 str s = ide::in; out: s;                // instead of "in"
 out: in;                                // instead of "in"
 if (in == 7) {out: "user inputs 7";}    // instead of "in"
+*/ // block above depends on ide, don't uncomment it as fully it is
 
 
 /// if, else if, else
