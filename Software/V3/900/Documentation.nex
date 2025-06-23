@@ -113,9 +113,9 @@ if (in == 7) {out: "user inputs 7";}    // this block will work correctly only i
 
 // ! if you are using NexeLang Terminal as IDE, don't use "in", use ide::in instead !
 str s = ide::in; out: s;                // instead of "in"
-out: in;                                // instead of "in"
-if (in == 7) {out: "user inputs 7";}    // instead of "in"
-*/ // block above depends on ide, don't uncomment it as fully it is
+out: in;                                // same here
+if (in == 7) {out: "user inputs 7";}    // and here
+*/ // block above depends on ide, don't uncomment it as it is
 
 
 /// if, else if, else
