@@ -167,8 +167,11 @@ for ([1, 2, 3] -> arr)                  // for every item in the list will put i
 }
 
 
+/// Simple examples (all toggether)
+// sorry, I'm too lazy now, gonna add this part later
 
 
+// 
 
 
 out: "Hello world";
