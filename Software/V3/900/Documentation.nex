@@ -95,5 +95,40 @@ true == false & true;               // -> true == false && true == true -> false
 {/*1*/ /*2*/ /*3*/ /*2*/} - {/*2*/};// = {/*1*/  /*3*/ };                                   result: chunk
 
 
+/// input and output
+
+
+
+/// if, else if, else
+if (var1 == true) {
+    // this block be executed if variable var1 is true
+} else if (true /*same idea as in if*/ ) {
+    // if first if will be false, this if will check conditions inside
+} else {
+    // if everything above is false
+}
+
+// example
+if (var2 == 2) {
+    out: 2;
+} else if (var2 == 3) {
+    out: 3;
+} else if (var2 < 3) {
+    if (var2 == 1) {out: 1;}
+} else {
+    out: var2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 out: "Hello world";
 // to be contious...
