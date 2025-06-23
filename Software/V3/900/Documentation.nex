@@ -176,8 +176,14 @@ part {                                  // sometimes code looks better with part
     /* parts of code */                 // anyway this is just cosmetic changes, no new scopes
 }
 
+part ("you can name this part") {       // part with name
+    // code
+}
 
-
+int long_name = 123;
+part (long_name -> a) {                 // you can make mask on huge variable name
+    out: a, " = ", long_name;           // long name still will be available as well
+}
 
 
 
