@@ -1,6 +1,6 @@
 # NexeLang
 This is the main repository for the **NexeLang** or **NeXeLang**, pronounce however you prefer.
-While NeXeLang (New Executable Language) itself is **not open source**, this repository will not contain core components or source code related to the language.
+While NeXeLang (New Executable Language) itself is **not open source** project, this repository will not contain core components or source code related to the language.
 Instead repo will be used to share **ready-to-use tools**, such as IDEs, DLL extensions, and utilities related to the language.
 Nevertheless, NexeLang already provides enough tools to let you build DLL extensions, EXE demons, libraries, and even full applications.
 
