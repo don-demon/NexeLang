@@ -36,67 +36,84 @@ chunk   var8 = { /* block of code */ };         // code blocks of any size
 //  |   replacing "or" operator
 
 // bool
-true + false;                       // = true                                               result: bool
-true - true;                        // = false                                              result: bool
-true == true;                       // = true                                               result: bool
-true != true;                       // = false                                              result: bool
-true >= true;                       // = true                                               result: bool
-true <= true;                       // = true                                               result: bool
-true && false;                      // = false                                              result: bool
-true || false;                      // = true                                               result: bool
-true == false | true;               // -> true == false || true == true -> true             result: bool
-true == false & true;               // -> true == false && true == true -> false            result: bool
+true + false;                           // = true                                               result: bool
+true - true;                            // = false                                              result: bool
+true == true;                           // = true                                               result: bool
+true != true;                           // = false                                              result: bool
+true >= true;                           // = true                                               result: bool
+true <= true;                           // = true                                               result: bool
+true && false;                          // = false                                              result: bool
+true || false;                          // = true                                               result: bool
+true == false | true;                   // -> true == false || true == true -> true             result: bool
+true == false & true;                   // -> true == false && true == true -> false            result: bool
 
 // integer
-2 + 3;                              // = 3                                                  result: int
-2 - 3;                              // = -1                                                 result: int
-2 * 3;                              // = 4                                                  result: int
-2 / 3;                              // = 1.5                                                result: float
-3 % 2;                              // = 1                                                  result: int
-2 == 3;                             // = false                                              result: bool
-2 != 3;                             // = true                                               result: bool
-2 >= 3;                             // = false                                              result: bool
-2 <= 3;                             // = true                                               result: bool
+2 + 3;                                  // = 3                                                  result: int
+2 - 3;                                  // = -1                                                 result: int
+2 * 3;                                  // = 4                                                  result: int
+2 / 3;                                  // = 1.5                                                result: float
+3 % 2;                                  // = 1                                                  result: int
+2 == 3;                                 // = false                                              result: bool
+2 != 3;                                 // = true                                               result: bool
+2 >= 3;                                 // = false                                              result: bool
+2 <= 3;                                 // = true                                               result: bool
 
 // float
 // same as integer, but as decimal (with floating dot), I could just copy, but I think I just better skip it
 
 // strings
-"abc" + "b";                        // = abcb                                               result: str
-"abc" - "b";                        // = ac                                                 result: str  
-"abc" * 2;                          // = abcabc                                             result: str
-"abb" / "b";                        // = 2                                                  result: int
-"abc" % "b";                        // = ac                                                 result: str
-"abc" == "abb"                      // = false                                              result: bool
-"ab" != "abc"                       // = true                                               result: bool
+"abc" + "b";                            // = abcb                                               result: str
+"abc" - "b";                            // = ac                                                 result: str  
+"abc" * 2;                              // = abcabc                                             result: str
+"abb" / "b";                            // = 2                                                  result: int
+"abc" % "b";                            // = ac                                                 result: str
+"abc" == "abb"                          // = false                                              result: bool
+"ab" != "abc"                           // = true                                               result: bool
 
 // lists
-[1, 2, "a"] + [true];               // = [1, 2, "a", true]                                  result: list
-[1, 2.9] + 4;                       // = [5, 6.9]                                           result: list
-[1, 2, "a"] - [2];                  // = [1, "a"]                                           result: list
-[1, 2] - 2;                         // = [-1, 0]                                            result: list
-[1, 2] * 2;                         // = [2, 4]                                             result: list
-[1, 2] * [2];                       // = [1, 2, 1, 2]                                       result: list
-[1, 2] / 2;                         // = [0.5, 1]                                           result: list
-[true] == [true, []]                // = false                                              result: bool
-[true] != [true]                    // = false                                              result: bool
+[1, 2, "a"] + [true];                   // = [1, 2, "a", true]                                  result: list
+[1, 2.9] + 4;                           // = [5, 6.9]                                           result: list
+[1, 2, "a"] - [2];                      // = [1, "a"]                                           result: list
+[1, 2] - 2;                             // = [-1, 0]                                            result: list
+[1, 2] * 2;                             // = [2, 4]                                             result: list
+[1, 2] * [2];                           // = [1, 2, 1, 2]                                       result: list
+[1, 2] / 2;                             // = [0.5, 1]                                           result: list
+[true] == [true, []]                    // = false                                              result: bool
+[true] != [true]                        // = false                                              result: bool
 
 // map
 // no operations supported yet
 
 // row
-1'9 + 10'11;                        // = 1'11                                               result: row
-1'9 + 10;                           // = 1'10                                               result: row
-1'9 - 4'5;                          // = 1'9!4'5 = 1'3 + 6'9                                result: row
+1'9 + 10'11;                            // = 1'11                                               result: row
+1'9 + 10;                               // = 1'10                                               result: row
+1'9 - 4'5;                              // = 1'9!4'5 = 1'3 + 6'9                                result: row
 
 // chunks
-{out: "hello";} + {out: "there";};  // = {out: "hello";                                     
-                                    //    out: "there";}                                    result: chunk
+{out: "hello";} + {out: "there";};      // = {out: "hello";                                     
+                                        //    out: "there";}                                    result: chunk
 {/*1*/ /*2*/ /*3*/ /*2*/} - {/*2*/};// = {/*1*/  /*3*/ };                                   result: chunk
 
 
 /// input and output
+// for output you can use "out"
+out: 123;                               // -> 123
+out: "hi";                              // -> hi
+out: "number is: ", 7;                  // -> number is: 7
+out: "hello " + "there" + "!";          // -> hello there!
+out: "hello ", "there", "!";            // -> hello there!
+out(","): 1, 2, 3, true;                // -> 1,2,3,true
+out(" divider "): 1, "e", 3;            // -> 1 divider e divider 3
 
+// input
+str s = in; out: s;                     // this will output what you write in it
+out: in;                                // same as above, but without variable
+if (in == 7) {out: "user inputs 7";}    // this block will work correctly only if will input 7 in it
+
+// ! if you are using NexeLang Terminal as IDE, don't use "in", use ide::in instead !
+str s = ide::in; out: s;                // instead of "in"
+out: in;                                // instead of "in"
+if (in == 7) {out: "user inputs 7";}    // instead of "in"
 
 
 /// if, else if, else
