@@ -17,6 +17,7 @@ list    var5 = [true, 1, "str", ["anything"]];  // lists with any recursion
 map     var6 = ["key": "value", "key2": 123];   // key-value pairs, here is 2-sized, 3-sized: [1: 2: 3, 4: 5: 6, ...]
 row     var7 = 1'12!2'4;                        // list of 1, 5, 6, 7, 8, 9, 10, 11, 12
 chunk   var8 = { /* block of code */ };         // code blocks of any size
+any     var9 = "well, anything you want";       // you can put string there and then int without overriding
 /* or custom created witn DataType block */     // bound_int or smth else like this made with DataType blocks
 
 
@@ -186,6 +187,7 @@ part (long_name -> a) {                 // you can make mask on huge variable na
 }
 
 
+/// functions
 
 
 
