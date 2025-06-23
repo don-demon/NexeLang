@@ -105,7 +105,6 @@ out: "hello ", "there", "!";            // -> hello there!
 out(","): 1, 2, 3, true;                // -> 1,2,3,true
 out(" divider "): 1, "e", 3;            // -> 1 divider e divider 3
 
-
 /*
 // input
 str s = in; out: s;                     // this will output what you write in it
