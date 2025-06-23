@@ -1,0 +1,68 @@
+/// Before we start...
+// You can run this file if you want.
+// All code lines are valid, and everything else is properly commented.
+
+
+/// comments
+// single line
+/* multi line / with fixed length */
+
+
+/// variables
+bool    var1 = true;                            // or false
+int     var2 = 1;                               // 2, 3, 4...
+float   var3 = 1.23;                            // decimal values
+str     var4 = "abcабс123";                     // strings values
+list    var5 = [true, 1, "str", ["anything"]];  // lists with any recursion
+map     var6 = ["key": "value", "key2": 123];   // key-value pairs, here is 2-sized, 3-sized: [1: 2: 3, 4: 5: 6, ...]
+row     var7 = 1'12!2'4;                        // list of 1, 5, 6, 7, 8, 9, 10, 11, 12
+chunk   var8 = { /* block of code */ };         // code blocks of any size
+/* or custom created witn DataType block */     // bound_int or smth else like this made with DataType blocks
+
+
+/// operations x operators
+//  +   addiction
+//  -   substraction
+//  *   multiplication
+//  /   division
+//  %   remain from division? No way, I found name for this operator: "remainder (modulo)"
+//  ==  equality
+//  !=  not equality
+//  >=  more or equal
+//  <=  equal or less
+//  &&  "and" operator
+//  ||  "or" operator
+//  &   replacing "and" operator
+//  |   replacing "or" operator
+
+// bool
+true + false;           // = true                                               result: bool
+true - true;            // = false                                              result: bool
+true == true;           // = true                                               result: bool
+true != true;           // = false                                              result: bool
+true >= true;           // = true                                               result: bool
+true <= true;           // = true                                               result: bool
+true && false;          // = false                                              result: bool
+true || false;          // = true                                               result: bool
+true == false | true;   // -> true == false || true == true -> true             result: bool
+true == false & true;   // -> true == false && true == true -> false            result: bool
+
+// int
+2 + 3;                  // = 3                                                  result: int
+2 - 3;                  // = -1                                                 result: int
+2 * 3;                  // = 4                                                  result: int
+2 / 3;                  // = 1.5                                                result: float
+3 % 2;                  // = 1                                                  result: int
+2 == 3;                 // = false                                              result: bool
+2 != 3;                 // = true                                               result: bool
+2 >= 3;                 // = false                                              result: bool
+2 <= 3;                 // = true                                               result: bool
+
+// float
+// same as integer, but as decimal (with floating dot), I could just copy, but I think I just better skip it
+
+// 
+
+out: "Hello world";
+
+// to be contious...
