@@ -127,7 +127,7 @@ if (var1 == true) {
     // if everything above is false
 }
 
-// example
+// example (not very smart XD, but idk how to explain it better)
 if (var2 == 2) {
     out: 2;
 } else if (var2 == 3) {
