@@ -154,14 +154,17 @@ repeat (17) {/*code*/}                  // will repeat code block 17 times
 
 // while
 int a = 1;
-while (a < 10) {
+while (a < 10) {                        // cycle will repeat until a not be equal or more than 10
     a++;
 }
 
 // for pt1
+
 // for pt2
-
-
+for ([1, 2, 3] -> arr)                  // for every item in the list will put it in new variable arr.
+{                                       // Cycles repeat itself 3 times
+    // ...
+}
 
 
 
