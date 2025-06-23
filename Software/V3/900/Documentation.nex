@@ -213,10 +213,19 @@ int return_2() {
 DataType myInt(int) {                   // making out of int
     
     // what will we get from "int"?
-    // 3 elements:
+    // 3 elements, and first off
     // our vault with type "map"
     // it looks this way
     // map vault = ["here var names": "here values"];
+    // now we can override it using "override"
+    // lets try it
+
+    override map vault<3>;
+    // now out vault has 3 places instead of standard 2
+
+    // so, what also we inherited?
+    // 2 functions: get and set
+
 
 }
 
