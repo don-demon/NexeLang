@@ -225,6 +225,10 @@ DataType myInt(int) {                   // making out of int
 
     // so, what also we inherited?
     // 2 functions: get and set
+    // get function is being activated
+    // when anything is attempting to get value
+    // set function is being activated
+    // when our variable getting new value 
 
 
 }
