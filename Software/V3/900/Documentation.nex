@@ -171,7 +171,36 @@ for ([1, 2, 3] -> arr)                  // for every item in the list will put i
 // sorry, I'm too lazy now, gonna add this part later
 
 
-// 
+/// parts
+part {                                  // sometimes code looks better with parts ig,
+    /* parts of code */                 // anyway this is just cosmetic changes, no new scopes
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 out: "Hello world";
