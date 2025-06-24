@@ -163,9 +163,9 @@ if (var2 == 2) {
 repeat (17) {/*code*/}                  // will repeat code block 17 times
 
 // while
-int a = 1;
-while (a < 10) {                        // cycle will repeat until a not be equal or more than 10
-    a++;
+int b = 1;
+while (a < 10) {                        // cycle will repeat until "b" not be equal or more than 10
+    b++;
 }
 
 // for pt1
