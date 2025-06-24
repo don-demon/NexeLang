@@ -86,8 +86,8 @@ true == false & true;                   // -> true == false && true == true -> f
 [1, 2] * 2;                             // = [2, 4]                                             result: list
 [1, 2] * [2];                           // = [1, 2, 1, 2]                                       result: list
 [1, 2] / 2;                             // = [0.5, 1]                                           result: list
-[true] == [true, []]                    // = false                                              result: bool
-[true] != [true]                        // = false                                              result: bool
+[true] == [true, []];                   // = false                                              result: bool
+[true] != [true];                       // = false                                              result: bool
 
 // map
 // no operations supported yet
