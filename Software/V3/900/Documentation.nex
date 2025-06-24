@@ -73,6 +73,7 @@ true == false & true;                   // -> true == false && true == true -> f
 "abc" - "b";                            // = ac                                                 result: str
 "abc" - ["c", "b"];                     // = a                                                  result: str
 "abc" * 2;                              // = abcabc                                             result: str
+"abc" * [2, 3];                         // = abc * 2 * 3 = abcabc * 3 = abcabcabcabcabcabc      result: str
 "abb" / "b";                            // = 2                                                  result: int
 "abc" % "b";                            // = ac                                                 result: str
 "abc" == "abb";                         // = false                                              result: bool
