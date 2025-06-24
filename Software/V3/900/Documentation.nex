@@ -54,15 +54,18 @@ true == false & true;                   // -> true == false && true == true -> f
 2 - 3;                                  // = -1                                                 result: int
 2 - [5, 6, 7];                          // = 2 - 5 - 6 - 7 = -16                                result: int
 2 * 3;                                  // = 4                                                  result: int
+2 * [1, 2];                             // = 4                                                  result: int
 2 / 3;                                  // = 1.5                                                result: float
+2 / [1, 2];                             // = 1                                                  result: int
 3 % 2;                                  // = 1                                                  result: int
+9 % [5, 3];                             // = 1                                                  result: int
 2 == 3;                                 // = false                                              result: bool
 2 != 3;                                 // = true                                               result: bool
 2 >= 3;                                 // = false                                              result: bool
 2 <= 3;                                 // = true                                               result: bool
 
 // float
-// same as integer, but as decimal (with floating dot), I could just copy, but I think I just better skip it
+// same as integer, but as decimal (with floating dot), I could just copy, but I think I just better skip dat
 
 // strings
 "abc" + "b";                            // = abcb                                               result: str
