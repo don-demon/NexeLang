@@ -68,8 +68,8 @@ true == false & true;                   // -> true == false && true == true -> f
 "abc" * 2;                              // = abcabc                                             result: str
 "abb" / "b";                            // = 2                                                  result: int
 "abc" % "b";                            // = ac                                                 result: str
-"abc" == "abb"                          // = false                                              result: bool
-"ab" != "abc"                           // = true                                               result: bool
+"abc" == "abb";                         // = false                                              result: bool
+"ab" != "abc";                          // = true                                               result: bool
 
 // lists
 [1, 2, "a"] + [true];                   // = [1, 2, "a", true]                                  result: list
