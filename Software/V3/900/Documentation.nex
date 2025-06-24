@@ -229,8 +229,19 @@ DataType myInt(int) {                   // making out of int
     // when anything is attempting to get value
     // set function is being activated
     // when our variable getting new value 
+    // we can leave everything as it is,
+    // but thats boring, leats override it
 
+    override any get(any varname) {
+        // when smth is asking for value of variable
+        // it's giving us name of variable,
+        // then "get" function getting it as "varname" parameter
+        // so, lets try to return the value, knowing the name
+        return: vault[varname]; // as simple as that
+    }
 
+    // and the last one is set function
+    // but let's say we don't want to override it yet
 }
 
 
