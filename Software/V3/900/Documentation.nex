@@ -50,7 +50,9 @@ true == false & true;                   // -> true == false && true == true -> f
 
 // integer
 2 + 3;                                  // = 3                                                  result: int
+2 + [1, 2];                             // = 2 + 1 + 2 = 5                                      result: int
 2 - 3;                                  // = -1                                                 result: int
+2 - [5, 6, 7];                          // = 2 - 5 - 6 - 7 = -16                                result: int
 2 * 3;                                  // = 4                                                  result: int
 2 / 3;                                  // = 1.5                                                result: float
 3 % 2;                                  // = 1                                                  result: int
