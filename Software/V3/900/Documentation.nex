@@ -242,9 +242,14 @@ DataType myInt(int) {                   // making out of int
 
     // and the last one is set function
     // but let's say we don't want to override it yet
+
 }
 
-
+// now we finished myInt creation, so try it out
+// we declarating simple variable this way
+int a = 123;
+// so, now to declarate "myInt" we will use same idea
+myInt b = 123;
 
 
 
