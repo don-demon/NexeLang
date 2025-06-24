@@ -66,7 +66,9 @@ true == false & true;                   // -> true == false && true == true -> f
 
 // strings
 "abc" + "b";                            // = abcb                                               result: str
-"abc" - "b";                            // = ac                                                 result: str  
+"abc" + ["c", "b"];                     // = abccb                                              result: str
+"abc" - "b";                            // = ac                                                 result: str
+"abc" - ["c", "b"];                     // = a                                                  result: str
 "abc" * 2;                              // = abcabc                                             result: str
 "abb" / "b";                            // = 2                                                  result: int
 "abc" % "b";                            // = ac                                                 result: str
