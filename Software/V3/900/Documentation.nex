@@ -164,7 +164,7 @@ repeat (17) {/*code*/}                  // will repeat code block 17 times
 
 // while
 int b = 1;
-while (a < 10) {                        // cycle will repeat until "b" not be equal or more than 10
+while (b < 10) {                        // cycle will repeat until "b" not be equal or more than 10
     b++;
 }
 
