@@ -235,11 +235,8 @@ DataType myInt(int) {                   // making out of int
     // our vault with type "map"
     // it looks this way
     // map vault = ["here var names": "here values"];
-    // now we can override it using "override"
-    // lets try it
-
-    override map vault<3>;
-    // now out vault has 3 places instead of standard 2
+    // now we can override it using "override" this way
+    // override map vault;
 
     // so, what also we inherited?
     // 2 functions: get and set
