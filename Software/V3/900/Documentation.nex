@@ -200,7 +200,7 @@ part (long_name -> a) {                 // you can make mask on huge variable na
 
 // block with name and masks in the same time
 int long_name2 = 123; int ln3 = 321;                    
-part ("you can name this part", long_name2 -> a2, ln3 -> a3) {
+part ("you can name this part"; long_name2 -> a2, ln3 -> a3) {
     out: a2, " = ", long_name, " and ", a3, " = ", ln3;           
 }                               
 
