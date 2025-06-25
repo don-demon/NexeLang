@@ -262,9 +262,9 @@ DataType myInt(int) {                   // making out of int
 
 // now we finished myInt creation, so try it out
 // we declarating simple variable this way
-int a = 123;
+int q = 123;
 // so, now to declarate "myInt" we will use same idea
-myInt b = 123;
+myInt w = 123;
 
 // 2 - Create, without inheriting
 // ...
