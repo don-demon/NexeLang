@@ -169,6 +169,9 @@ while (b < 10) {                        // cycle will repeat until "b" not be eq
 }
 
 // for pt1
+for (int i = 0; i < 10; i++) {          // this will output "i" 10 times, from 0 to 9
+    out: i;
+}
 
 // for pt2
 for ([1, 2, 3] -> arr)                  // for every item in the list will put it in new variable arr.
