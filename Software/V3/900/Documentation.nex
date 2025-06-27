@@ -307,6 +307,13 @@ trigger T2 = [
 
 */
 
+// to simplify all about triggers:
+// trigger <name> = [condition -> what to do];
+
+
+
+
+
 
 out: "Hello world";
 // to be contious...
