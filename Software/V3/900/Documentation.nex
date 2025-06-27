@@ -270,12 +270,42 @@ myInt w = 123;
 // ...
 
 
+/// Triggers
+// triggers is not a base type variables, so it can be defined this way
+// trigger <name> = [<bool>, <chunk>];
+// if first argument changing it state from 'false' to 'true'
+// then trigger starts to execute the second argument - chunk
 
+// lets say we wanna create trigger that fires every time variable 'i2' became more than 100
+int i2 = 0; // defining it
 
+// our trigger will be: [ i2 > 100, { /* any action we want */ } ]
+trigger T = [i2 > 100, {out: "i2 is: ", i2;}];
 
+// now we can change i2 to 150 and console will print "i2 is: 150"
+i2 = 150;
 
+// lets try more useful trigger with some extensions
+// for example we will build trigger that open spotify on ctrl + alt + s
+// for this step we will need 2 libraries: kb.dll and proc.dll
+// (you can download both from github NexeLang - /Software/*version name*/Extensions/ )
+// let's include it
+/* you can uncomment this secsion if you downloaded both libs in the same folder with .exe file
+include "kb";
+include "proc";
 
+// okay now we will do: if ctrl + alt + s pushed -> open spotify.exe
+// for condition we can use this function from keyboard library:
+// now it will become: pushed(<list>) -> kb::pushed(["ctrl", "alt", "s"])
+// for action we will use process library this way: proc::start(<str>)
+// now it will become: {proc::start("C:\Users\*your name*\AppData\Roaming\Spotify\Spotify.exe")}
+// don't forget - chunk value type requres '{' and '}'
+trigger T2 = [
+    kb::pushed(["ctrl", "alt", "s"]),
+    {proc::start("C:\Users\*your name*\AppData\Roaming\Spotify\Spotify.exe")}
+];
 
+*/
 
 
 out: "Hello world";
