@@ -15,6 +15,10 @@ Versions policy x Repository structure:
 - - readme.md           (Description for repository, this is what you are reading rn)
 - - license             (License for using, downloading etc (what you can/can't do with these software))
 
+NexeLang Terminal Warning: If the application doesn't start, try running it in Windows 8 compatibility mode:
+Properties → Compatibility → Compatibility Mode → Windows 8
+
+
 Stay tuned for updates, releases, and development progress!
 
 
